@@ -1876,6 +1876,7 @@ module.exports = TabletopsimulatorLua =
       return
     self.savePath = path.normalize(savePath)
     log LOG_MSG, "Parsing savepath " + self.savePath
+    console.log "Parsing svepath" + self.savePath
     self.recordSaveTimestamp()
     save = JSON.parse(fs.readFileSync(self.savePath, 'utf8'))
     walkSave = (node, parent) ->
