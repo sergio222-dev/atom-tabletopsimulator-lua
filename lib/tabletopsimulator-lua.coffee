@@ -1888,8 +1888,10 @@ module.exports = TabletopsimulatorLua =
       'drive_c'
     )
 
-    winPath.replace(/^c:/i, protonRoot)
+    winPath = winPath.replace(/^c:/i, protonRoot)
+    console.log winPath
     self.savePath = winPath
+    console.log self.savePath
 
     log LOG_MSG, "Parsing savepath " + self.savePath
     console.log "Parsing svepath" + self.savePath
