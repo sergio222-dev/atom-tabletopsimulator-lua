@@ -174,7 +174,7 @@ includeShouldBeEnclosed = (filepath) ->
 
 defaultIncludeOtherFilesPath = () ->
   return path.join(
-    `~`, 
+    '~',
     '.steam',
     'steam',
     'steamapps',
