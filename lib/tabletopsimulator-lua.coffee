@@ -1874,7 +1874,23 @@ module.exports = TabletopsimulatorLua =
     if savePath == ''
       self.savePath = ''
       return
+
     self.savePath = path.normalize(savePath)
+    winPath = self.savePath 
+    protonRoot = path.join(
+      os.homedir(),
+      '.steam',
+      'steam',
+      'steamapps',
+      'compatdata',
+      '286160',
+      'pfx',
+      'drive_c'
+    )
+
+    winPath.replace(/^c:/i, protonRoot)
+    self.savePath = winPath
+
     log LOG_MSG, "Parsing savepath " + self.savePath
     console.log "Parsing svepath" + self.savePath
     self.recordSaveTimestamp()
