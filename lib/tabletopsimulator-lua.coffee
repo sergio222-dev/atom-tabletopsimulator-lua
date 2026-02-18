@@ -1876,7 +1876,7 @@ module.exports = TabletopsimulatorLua =
       return
 
     self.savePath = path.normalize(savePath)
-    winPath = self.savePath 
+    winPath = self.savePath.replace(/\\/g, '/')
     protonRoot = path.join(
       os.homedir(),
       '.steam',
