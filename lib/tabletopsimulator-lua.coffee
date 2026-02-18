@@ -174,7 +174,7 @@ includeShouldBeEnclosed = (filepath) ->
 
 defaultIncludeOtherFilesPath = () ->
   return path.join(
-    os.homedir(),
+    `~`, 
     '.steam',
     'steam',
     'steamapps',
@@ -185,8 +185,7 @@ defaultIncludeOtherFilesPath = () ->
     'users',
     'steamuser',
     'My Documents',
-    'My Games',
-    'Tabletop Simulator'
+    'My Games'
   )
 
 getRootPath = () ->
