@@ -1,8 +1,8 @@
 {
-  "name": "tabletopsimulator-lua",
+  "name": "tabletopsimulator-lua-sergio",
   "main": "./lib/tabletopsimulator-lua",
-  "version": "13.2.0",
-  "description": "Official plugin for Tabletop Simulator's Lua Scripting.",
+  "version": "13.2.1",
+  "description": "UnOfficial plugin for Tabletop Simulator's Lua Scripting.",
   "keywords": [
     "tabletop",
     "simulator",
@@ -10,7 +10,7 @@
     "tabletopsimulator",
     "lua"
   ],
-  "repository": "https://github.com/Knils/atom-tabletopsimulator-lua",
+  "repository": "https://github.com/sergio222-dev/atom-tabletopsimulator-lua",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
