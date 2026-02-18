@@ -1,5 +1,5 @@
 {
-  "name": "tabletopsimulator-lua-sergio",
+  "name": "tabletopsimulator-lua",
   "main": "./lib/tabletopsimulator-lua",
   "version": "13.2.1",
   "description": "UnOfficial plugin for Tabletop Simulator's Lua Scripting.",
