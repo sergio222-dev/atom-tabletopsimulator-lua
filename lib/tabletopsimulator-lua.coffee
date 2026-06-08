@@ -2126,6 +2126,7 @@ module.exports = TabletopsimulatorLua =
 
   startServer: ->
     if atom.config.get('tabletopsimulator-lua.loadSave.communicationMode') == 'disable'
+      console.log "Communication mode is disabled"
       return
     handleMessage = @handleMessage
     self = this
@@ -2135,7 +2136,7 @@ module.exports = TabletopsimulatorLua =
       #socket.parse_line = @parse_line
 
       socket.on 'data', (data) ->
-        #console.log "Data received", Date.now()
+        console.log "Data received", Date.now()
         @data_cache += data
         try
           @data = JSON.parse(@data_cache)
